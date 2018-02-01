@@ -24,6 +24,11 @@ h2 {
 h3 {
     font-size: 1.25rem;
 }
+
+.feature {
+    width: 60%;
+}
+
 /* === header === */
 
 header {
@@ -49,6 +54,7 @@ header {
 nav {
     display: flex;
     align-items: center;
+    color: #4B4B4B;
 }
 
 nav ul {
@@ -59,3 +65,11 @@ nav li {
     display: inline;
     padding-left: 16px;
 }
+
+/* === Hero === */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    background-color: #D8D8D8;
+} 
