@@ -1,0 +1,61 @@
+/* === global styles === */
+
+html {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: #9B9B9B;
+}
+
+h1, 
+h2, 
+h3 {
+    color: #505050;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+/* === header === */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    margin: auto 0;
+    padding-left: 25px;
+    height: 32px;
+    align-items: center;
+}
+
+.logo p:nth-child(2n+0) {
+    font-weight: bold;
+    color: #505050;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    margin-right: 24px;
+}
+
+nav li {
+    display: inline;
+    padding-left: 16px;
+}
