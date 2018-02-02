@@ -98,8 +98,8 @@ nav li {
     text-align: center;
 }
 
-h1, 
-h3,
+.mission h1, 
+.mission h3,
 .button {
     margin-bottom: 24px;
     width: 60%; 
@@ -108,4 +108,58 @@ h3,
 .button p {
     padding: 8px;
     color: white;
+}
+
+/* === information === */
+
+.information {
+    display: flex;
+    flex-direction: row;
+}
+
+.caption {
+    margin: 32px 24px 0 0;
+}
+
+.containerRight {
+    width: 40%;
+    padding: 32px 0;
+}
+
+.teaser {
+    display: flex;
+    border: solid 1px lightgrey;
+}
+
+.teaser:last-child {
+    background-color: lightgrey;
+}
+
+.teaserimg {
+    max-width: 35%;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.teaser img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.teasertxt {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.teasertxt h3,
+.teasertxt p {
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: underline;
+    color: blue;
 }
