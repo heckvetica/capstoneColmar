@@ -148,21 +148,27 @@ nav li {
 }
 
 .button p {
-    padding: 8px;
+    padding: 8px 0;
     color: white;
 }
 
 @media only screen and (max-width: 850px) {
+
     .hero {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .mission {
+        margin: 0 16px; 
     }
 
     .mission h1, 
     .mission h3,
     .button {
-        width: 100%;
-        margin-left: 16px; 
-    }
+    margin-bottom: 24px;
+    width: 100%;
+}
 
     .button {
         background-color: #9B9B9B;
