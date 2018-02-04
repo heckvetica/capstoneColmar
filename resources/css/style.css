@@ -313,11 +313,14 @@ div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 72px;
+    margin-bottom: 32px;
 }
 
 .course {
     background-color: white;
     margin: 16px;
+    margin-bottom: 0;
     width: 30%;
 }
 
