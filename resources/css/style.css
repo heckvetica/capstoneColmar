@@ -29,6 +29,10 @@ h3 {
     font-size: 1.25rem;
 }
 
+.mobile {
+    display: none;
+}
+
 .feature {
     width: 60%;
     overflow: hidden;
@@ -47,7 +51,17 @@ h3 {
         width: 100%;
         padding: 0 0 32px 0;
     }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+    display: flex;
+    }
 }
+
+
 
 /* === header === */
 
@@ -86,20 +100,12 @@ nav li {
     margin: auto 0;
 }
 
-.mobile {
-    display: none;
-}
-
 @media only screen and (max-width: 850px) {
     header {
         display: block;
     }
     
     .logo {
-        display: none;
-    }
-
-    .desktop {
         display: none;
     }
 
@@ -114,8 +120,7 @@ nav li {
         align-items: center;
     }
 
-    .mobile {
-        display: flex;
+    nav .mobile {
         justify-content: space-around;
         margin: 0;
     }
@@ -186,6 +191,7 @@ nav li {
 .information {
     display: flex;
     flex-direction: row;
+    background-color: #F3F5F5;
 }
 
 .caption {
@@ -243,4 +249,48 @@ nav li {
 a {
     text-decoration: underline;
     color: blue;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .information {
+        flex-direction: column;
+    }
+
+    .containerRight {
+        padding-top: 16px;
+        width: 100%;
+    }
+
+    .teaser {
+        flex-direction: column;
+        border: hidden;
+    }
+
+    .teaser:last-child {
+        background-color: inherit;
+    }
+
+    .teaserimg {
+        max-width: 100%;
+        overflow: hidden;
+        padding: 16px;
+    }
+    
+    .teaser img {
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+
+    .teasertxt {
+        padding: 0 16px;
+        width: 100%
+    }
+
+}
+
+/* === learning === */
+.learning {
+    display: block;
 }
