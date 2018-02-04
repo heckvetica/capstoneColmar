@@ -42,6 +42,13 @@ h3 {
    display: block;
 }
 
+@media only screen and (max-width: 850px) {
+    .feature {
+        width: 100%;
+        padding: 0 0 32px 0;
+    }
+}
+
 /* === header === */
 
 header {
@@ -143,6 +150,29 @@ nav li {
 .button p {
     padding: 8px;
     color: white;
+}
+
+@media only screen and (max-width: 850px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .mission h1, 
+    .mission h3,
+    .button {
+        width: 100%;
+        margin-left: 16px; 
+    }
+
+    .button {
+        background-color: #9B9B9B;
+    }
+
+    .mission h1,
+    .button {
+        margin-bottom: 32px;
+    }
+
 }
 
 /* === information === */
