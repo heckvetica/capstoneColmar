@@ -4,6 +4,7 @@ html {
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: #9B9B9B;
+    background-color: #F3F5F5;
 }
 
 h1, 
@@ -191,7 +192,6 @@ nav li {
 .information {
     display: flex;
     flex-direction: row;
-    background-color: #F3F5F5;
 }
 
 .caption {
@@ -291,6 +291,48 @@ a {
 }
 
 /* === learning === */
+
+div {
+    border: solid 1px black;
+}
+
 .learning {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #EAEBEC;
+}
+
+.learning h2{
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.course {
+    background-color: white;
+    margin: 16px;
+    width: 30%;
+}
+
+.courseimg {
+    width: 100%;
+    overflow: hidden;
+}
+
+.course img, {
+   max-width: 100%; 
+   height: auto;
+   display: block;
+}
+
+.coursetxt {
+    padding: 16px;
+    width: 90%;
 }
