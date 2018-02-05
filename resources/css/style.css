@@ -271,15 +271,16 @@ a {
         background-color: inherit;
     }
 
-    .teaserimg {
+    .teaserimg.mobile {
         max-width: 100%;
         overflow: hidden;
+        display: block;
         padding: 16px;
     }
     
-    .teaser img {
+    .teaserimg img {
         height: auto;
-        width: 100%;
+        max-width: 100%;
         display: block;
     }
 
@@ -291,10 +292,6 @@ a {
 }
 
 /* === learning === */
-
-div {
-    border: solid 1px black;
-}
 
 .learning {
     display: flex;
