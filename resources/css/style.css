@@ -382,4 +382,5 @@ a {
 
 .thesis {
     display: flex;
+    flex-direction: row;
 }
