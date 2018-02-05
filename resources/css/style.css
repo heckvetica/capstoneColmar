@@ -382,5 +382,16 @@ a {
 
 .thesis {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.thesis h2 {
+    margin: 0 auto;
+}
+
+.thesis-content {
+    display: flex;
+    flex-direction: columnn;
 }
