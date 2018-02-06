@@ -58,7 +58,7 @@ h3 {
     margin: 32px 24px 0 0;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 750px) {
     .feature {
         width: 100%;
         padding: 0 0 32px 0;
@@ -120,7 +120,7 @@ nav li {
     margin: auto 0;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 750px) {
     header {
         display: block;
     }
@@ -176,11 +176,11 @@ nav li {
 }
 
 .button p {
-    padding: 1.25rem 0;
+    padding: 0.5rem 0;
     color: white;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 750px) {
 
     .hero {
         flex-direction: column;
@@ -270,7 +270,7 @@ nav li {
     color: blue;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 750px) {
 
     .information {
         flex-direction: column;
@@ -346,12 +346,12 @@ nav li {
     width: 30%;
 }
 
-.courseimg {
+.courseimg.desktop {
     width: 100%;
     overflow: hidden;
 }
 
-.course img, {
+.courseimg img {
    max-width: 100%; 
    height: auto;
    display: block;
@@ -368,7 +368,7 @@ nav li {
     padding-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 750px) {
 
     .learning {
         background-color: inherit;
@@ -438,9 +438,19 @@ nav li {
     background-color: lightgrey;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 750px) {
+
+    .thesis.container {
+        padding: 0;
+    }
+
     .thesis h2 {
         padding-bottom: 1rem;
+    }
+
+    .thesisvid {
+        width: 100%;
+        margin: 0;
     }
 }
 
