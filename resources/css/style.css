@@ -82,10 +82,14 @@ h3 {
 /* === header === */
 
 header {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     height: 64px;
     width: 100%;
+    z-index: 12;
+    background-color: white;
 }
 
 .logo {
@@ -147,6 +151,7 @@ nav li {
 .hero {
     display: flex;
     background-color: #D8D8D8;
+    margin-top: 64px;
 } 
 
 .mission {
