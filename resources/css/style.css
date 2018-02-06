@@ -291,7 +291,7 @@ nav li {
         overflow: hidden;
     }
 
-    .teaser:last-child {
+    .information.teaser:last-child {
         background-color: inherit;
     }
 
