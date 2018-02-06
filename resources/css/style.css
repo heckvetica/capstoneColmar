@@ -33,7 +33,6 @@ h3 {
 
 .container {
     padding: 32px 24px;
-    min-width: 450px;
 }
 
 .mobile {
@@ -237,6 +236,8 @@ nav li {
 
 .information .teaser:last-child {
     background-color: lightgrey;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .teaserimg.desktop{
@@ -269,10 +270,6 @@ a {
 }
 
 @media only screen and (max-width: 850px) {
-
-    div {
-        border: 1px solid black;
-    }
 
     .information {
         flex-direction: column;
@@ -319,21 +316,25 @@ a {
 .learning {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
     background-color: #EAEBEC;
+}
+
+.learning.container {
+    padding: 0 72px;
+    margin: 0;
 }
 
 .learning h2{
     padding-top: 32px;
     padding-bottom: 16px;
+    text-align: center;
 }
 
 .courses {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 72px;
+    justify-content: center;
     margin-bottom: 32px;
 }
 
@@ -358,7 +359,7 @@ a {
 .coursetxt {
     padding: 16px;
     padding-bottom:16px;
-    width: 90%;
+    height: auto;
 }
 
 .coursetxt h3,
@@ -367,27 +368,32 @@ a {
 }
 
 @media only screen and (max-width: 850px) {
-    
+
     .learning {
         background-color: inherit;
+    }
+
+    .learning.container {
+        margin: 0 16px;
+        padding: 0;
     }
 
     .courses {
         flex-direction: column;
         flex-wrap: nowrap;
         padding: 0;
-        width: 100%;
         overflow: hidden;
+        width: 100%;
     }
 
     .course {
         width: 100%;
-        background-color: #F3F5F5;
-        margin: 0px 16px 8px 16px;
+        margin: 0 0 8px 0;
+        background-color: inherit;
     }
 
     .course:last-child {
-        margin: 0px 16px 0px 16px;
+        margin: 0;
     }
 
     .coursetxt {
@@ -398,9 +404,9 @@ a {
         padding: 16px;
         padding-bottom: 24px;
         background-color: lightgrey;
+        border-radius: 5px;
     }
 }
-
 /* === thesis === */
 
 .thesis {
