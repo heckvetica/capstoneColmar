@@ -1,7 +1,7 @@
 /* === global styles === */
 
 html {
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Open Sans", sans-serif;
     color: #9B9B9B;
     background-color: #F3F5F5;
@@ -163,7 +163,6 @@ nav li {
 .button {
     background-color: #505050;
     text-align: center;
-    border-radius: 5px;
 }
 
 .button:hover {
@@ -269,7 +268,7 @@ nav li {
     margin-bottom: 8px;
 }
 
-a {
+.teaser a {
     text-decoration: underline;
     color: blue;
 }
@@ -409,7 +408,6 @@ a {
         padding: 16px;
         padding-bottom: 24px;
         background-color: lightgrey;
-        border-radius: 5px;
     }
 }
 /* === thesis === */
@@ -450,3 +448,22 @@ a {
 }
 
 /* === footer === */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1.5rem;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer li {
+    margin-left: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
