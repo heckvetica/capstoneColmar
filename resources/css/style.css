@@ -240,8 +240,6 @@ nav li {
 
 .information .teaser:last-child {
     background-color: lightgrey;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 .teaserimg.desktop{
