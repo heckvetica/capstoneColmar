@@ -31,6 +31,11 @@ h3 {
     font-size: 1.25rem;
 }
 
+.container {
+    padding: 32px 24px;
+    min-width: 450px;
+}
+
 .mobile {
     display: none;
 }
@@ -38,20 +43,30 @@ h3 {
 .feature {
     width: 60%;
     overflow: hidden;
-    padding: 32px 24px;
+    padding: 32px 0;
 }
 
 .feature img,
 .feature video {
    max-width: 100%; 
    height: auto;
-   display: block;
+   display: block; 
+}
+
+.caption {
+    display: flex;
+    flex-flow: column;
+    margin: 32px 24px 0 0;
 }
 
 @media only screen and (max-width: 850px) {
     .feature {
         width: 100%;
         padding: 0 0 32px 0;
+    }
+
+    .container {
+        padding: 32px 16px;
     }
 
     .desktop {
@@ -132,19 +147,23 @@ nav li {
 
 .hero {
     display: flex;
-    justify-content: center;
     background-color: #D8D8D8;
 } 
 
 .mission {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: auto 24px;
 }
 
 .button {
     background-color: #505050;
     text-align: center;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #4B4B4B;
 }
 
 .mission h1, 
@@ -163,11 +182,10 @@ nav li {
 
     .hero {
         flex-direction: column;
-        width: 100%;
     }
 
-    .mission {
-        margin: 0 16px; 
+    .hero.container {
+        padding: 0;
     }
 
     .mission h1, 
@@ -195,12 +213,6 @@ nav li {
     flex-direction: row;
 }
 
-.caption {
-    display: flex;
-    flex-flow: column;
-    margin: 32px 24px 0 0;
-}
-
 .caption h2 {
     padding-bottom: 24px;
 }
@@ -214,12 +226,16 @@ nav li {
     padding: 32px 0;
 }
 
+.information.container {
+    padding-right: 0;
+}
+
 .teaser {
     display: flex;
     border: solid 1px lightgrey;
 }
 
-.teaser:last-child {
+.information .teaser:last-child {
     background-color: lightgrey;
 }
 
@@ -254,8 +270,16 @@ a {
 
 @media only screen and (max-width: 850px) {
 
+    div {
+        border: 1px solid black;
+    }
+
     .information {
         flex-direction: column;
+    }
+
+    .information.container {
+        padding-right: 16px;
     }
 
     .containerRight {
@@ -281,7 +305,6 @@ a {
     .teaserimg img {
         width: 100%;
         display: inline-block;
-        padding: 0 16px;
     }
 
     .teasertxt {
@@ -391,7 +414,16 @@ a {
     margin: 0 auto;
 }
 
+.caption h3 {
+    padding-bottom: 24px;
+}
+
+
 .thesis-content {
     display: flex;
     flex-direction: columnn;
+}
+
+.thesis .teaser:first-child {
+    background-color: lightgrey;
 }
