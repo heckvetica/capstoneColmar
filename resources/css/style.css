@@ -257,6 +257,10 @@ nav li a:hover {
     border-bottom: solid 1px #696969;
 }
 
+.infoimg {
+    margin-right: 24px;
+}
+
 .infoimg img {
     border-radius: 15px;
 }
