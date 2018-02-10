@@ -32,14 +32,10 @@ h3 {
     font-size: 1.25rem;
 }
 
-.foo {
+.sitecontainer {
     padding: 32px 24px;
     max-width: 2000px;
     display: flex;
-}
-
-.container {
-    padding: 32px 24px;
 }
 
 .mobile {
@@ -71,13 +67,9 @@ h3 {
         padding: 0 0 32px 0;
     }
 
-    .foo {
+    .sitecontainer {
         padding: 32px 16px;
         flex-direction: column;
-    }
-
-    .container {
-        padding: 32px 16px;
     }
 
     .desktop {
@@ -183,7 +175,7 @@ nav li a:hover {
     margin-top: 64px;
 } 
 
-.hero .foo {
+.hero .sitecontainer {
     width: 100%;
 }
 
@@ -238,7 +230,7 @@ nav li a:hover {
         flex-direction: column;
     }
 
-    .hero .foo {
+    .hero .sitecontainer {
         padding: 0;
     }
 
@@ -295,7 +287,7 @@ nav li a:hover {
     padding: 32px 0;
 }
 
-.information .foo {
+.information .sitecontainer {
     padding-right: 0;
 }
 
@@ -358,7 +350,7 @@ nav li a:hover {
         flex-direction: column;
     }
 
-    .information .foo {
+    .information .sitecontainer {
         padding-right: 16px;
     }
 
@@ -413,7 +405,7 @@ nav li a:hover {
 
 /* Photo above by Maik Jonietz on Unsplash */
 
-.learning .foo {
+.learning .sitecontainer {
     flex-direction: column;
     justify-content: center;
     padding: 0 72px;
@@ -487,7 +479,7 @@ nav li a:hover {
         background-color: inherit;
     }
 
-    .learning .foo {
+    .learning .sitecontainer {
         width: 100%;
         margin: 0 16px;
         padding: 0;
@@ -536,12 +528,12 @@ nav li a:hover {
     margin-top: 32px;
 }
 
-.thesis .foo {
+.thesis .sitecontainer {
     flex-direction: column;
     justify-content: center;
 }
 
-.thesis .foo h2 {
+.thesis .sitecontainer h2 {
     margin: 0 auto;
 }
 
@@ -561,7 +553,7 @@ nav li a:hover {
 
 @media only screen and (max-width: 750px) {
 
-    .thesis .foo {
+    .thesis .sitecontainer {
         padding: 0;
     }
 
@@ -575,24 +567,24 @@ nav li a:hover {
     }
 }
 
-/* === footer === */
+/* === sitecontainerter === */
 
-footer {
+sitecontainerter {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
     border-top: 1px solid #D7CCDB;
 }
 
-footer ul {
+sitecontainerter ul {
     display: flex;
 }
 
-footer li {
+sitecontainerter li {
     margin-left: 1rem;
 }
 
-footer a {
+sitecontainerter a {
     text-decoration: none;
     color: inherit;
 }
