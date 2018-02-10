@@ -414,7 +414,7 @@ nav li a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1590px;
+    max-width: 1700px;
     justify-content: center;
     margin-bottom: 2rem;
 }
@@ -443,8 +443,8 @@ nav li a:hover {
    max-width: 100%; 
    height: auto;
    display: block;
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
 }
 
 .coursetxt {
