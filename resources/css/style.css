@@ -2,7 +2,7 @@
 
 html {
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Lora', serif;
     color: #8F8F8F;
     background-color: #F3F5F5;
 }
@@ -12,6 +12,7 @@ h2,
 h3 {
     color: #696969;
     font-weight: bold;
+    font-family: "Open Sans", sans-serif;
 }
 
 h1, 
@@ -218,6 +219,7 @@ nav li a:hover {
 .button p {
     padding: 0.5rem 0;
     color: white;
+    font-weight: bold;
 }
 
 .mission a {
@@ -280,6 +282,7 @@ nav li a:hover {
 
 .caption span {
     padding-top: 2rem;
+    font-style: italic;
 }
 
 .containerRight {
@@ -339,9 +342,8 @@ nav li a:hover {
     color: #4C2C66;
 }
 
-.teaser a {
-    text-decoration: none;
-    color: #496499;
+.teasertxt p:last-child{
+    font-style: italic;
 }
 
 @media only screen and (max-width: 750px) {
@@ -384,7 +386,7 @@ nav li a:hover {
     }
 
     .teasertxt {
-        padding: 0 1rem;
+        padding: 1rem;
         width: 100%
     }
 
@@ -467,6 +469,10 @@ nav li a:hover {
 .coursetxt h3,
 .coursetxt p {
     padding-bottom: 0.5rem;
+}
+
+.coursetxt p:nth-child(2n+2) {
+    font-style: italic;
 }
 
 .coursetxt h3 a {
@@ -568,22 +574,28 @@ nav li a:hover {
 
 /* === sitecontainerter === */
 
-sitecontainerter {
+footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
-    border-top: 1px solid #D7CCDB;
+    color: #755691;
+    border-top: solid 1px #755691;
+    background-color: #D7CCDB;
 }
 
-sitecontainerter ul {
+footer ul {
     display: flex;
 }
 
-sitecontainerter li {
+footer li {
     margin-left: 1rem;
 }
 
-sitecontainerter a {
+footer a {
     text-decoration: none;
     color: inherit;
+}
+
+footer a:hover {
+    color: black;
 }
