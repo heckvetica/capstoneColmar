@@ -30,7 +30,6 @@ h2 {
 
 h3 {
     font-size: 1.25rem;
-    color: #4C2C66;
 }
 
 .container {
@@ -201,9 +200,12 @@ nav li a:hover {
     margin-bottom: 24px;
 }
 
-.mission h1,
-.mission h3 {
+.mission h1 {
     color: #4C2C66;
+}
+
+.mission h3 {
+    color: #505050;
 }
 
 .button p {
@@ -417,7 +419,13 @@ nav li a:hover {
     margin-bottom: 0;
     width: 30%;
     border-radius: 15px;
-    filter: drop-shadow(0 0 0.25rem #696969);
+    filter: drop-shadow(0 0 0.25rem #696969) brightness(85%);
+    transition: 250ms;
+}
+
+.course:hover{
+    transform: scale3d(1.02, 1.02, 2);
+    filter: drop-shadow(0 0 0.45rem #696969) brightness(100%);
 }
 
 .courseimg.desktop {
@@ -444,6 +452,10 @@ nav li a:hover {
     padding-bottom: 0.5rem;
 }
 
+.coursetxt h3 a {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 750px) {
 
     .learning {
@@ -466,7 +478,13 @@ nav li a:hover {
     .course {
         width: 100%;
         margin: 0 0 8px 0;
-        background-color: inherit;
+        background-color: white;
+        filter: brightness(85%);
+    }
+
+    .course:hover {
+        filter: brightness(100%);
+        transform: scale3d(1.0, 1.0, 1);
     }
 
     .course:last-child {
