@@ -255,6 +255,7 @@ nav li a:hover {
     display: flex;
     flex-direction: row;
     border-bottom: solid 1px #696969;
+    overflow: hidden;
 }
 
 .infoimg {
@@ -276,7 +277,6 @@ nav li a:hover {
 .containerRight {
     width: 40%;
     padding: 32px 0;
-    overflow: hidden;
 }
 
 .information.container {
