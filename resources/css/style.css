@@ -594,6 +594,7 @@ footer li {
 footer a {
     text-decoration: none;
     color: inherit;
+    transition: 200ms ease-out;
 }
 
 footer a:hover {
