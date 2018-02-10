@@ -25,10 +25,12 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+    color: #4C2C66;
 }
 
 h3 {
     font-size: 1.25rem;
+    color: #4C2C66;
 }
 
 .container {
@@ -250,6 +252,7 @@ nav li a:hover {
 .information {
     display: flex;
     flex-direction: row;
+    border-bottom: solid 1px #696969;
 }
 
 .infoimg img {
@@ -286,12 +289,12 @@ nav li a:hover {
     background-color: lightgrey;
 }
 
-.information .teaser:first-child {
+.teaser:first-child {
     border-top-left-radius: 15px;
 }
 
 
-.information .teaser:last-child {
+.teaser:last-child {
     border-bottom-left-radius: 15px;
 }
 
@@ -350,11 +353,8 @@ nav li a:hover {
 
     .teaser:hover {
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
-        transform: scale3d(1.01, 1.01, 1);
-    }
-
-    .information .teaser:last-child {
-        background-color: F3F5F5;
+        transform: scale3d(1.0, 1.0, 1);
+        background-color: #F3F5F5;
     }
 
     .teaserimg.mobile {
@@ -365,6 +365,7 @@ nav li a:hover {
     .teaserimg img {
         width: 100%;
         display: inline-block;
+        border-radius: 15px;
     }
 
     .teasertxt {
@@ -379,18 +380,27 @@ nav li a:hover {
 .learning {
     display: flex;
     flex-direction: column;
-    background-color: #EAEBEC;
+    background-image: url("../images/maik-jonietz-535261.jpg");
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+/* Photo above by Maik Jonietz on Unsplash */
 
 .learning.container {
     padding: 0 72px;
     margin: 0;
+    border-bottom: solid 1px #696969;    
 }
 
-.learning h2{
+.learning h1{
     padding-top: 2rem;
     padding-bottom: 1rem;
     margin: 0 auto;
+    color: #4C2C66;
 }
 
 .courses {
@@ -407,6 +417,7 @@ nav li a:hover {
     margin-bottom: 0;
     width: 30%;
     border-radius: 15px;
+    filter: drop-shadow(0 0 0.25rem #696969);
 }
 
 .courseimg.desktop {
@@ -439,7 +450,7 @@ nav li a:hover {
         background-color: inherit;
     }
 
-    .learning.container {
+    .courses.container {
         margin: 0 16px;
         padding: 0;
     }
@@ -498,10 +509,6 @@ nav li a:hover {
 .thesis-content {
     display: flex;
     flex-direction: columnn;
-}
-
-.thesis .teaser:first-child {
-    background-color: lightgrey;
 }
 
 @media only screen and (max-width: 750px) {
